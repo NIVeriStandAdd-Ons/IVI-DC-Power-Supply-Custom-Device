@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomDevice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Custom Device.xsd">
+<XSDVersion Major="2010" Minor="0" Fix="0" Build="0" />
+  <AddMenu>
+    <eng>IVI DC Power Supply</eng>
+    <loc>IVI DC Power Supply</loc>
+  </AddMenu>
+  <Version>1.0</Version>
+  <Type>Asynchronous</Type>
+  <MaxOccurrence>2474</MaxOccurrence>
+  <MainPageGUID>B6D4E6F5-536E-21B0-12EC-90794D02CEEC</MainPageGUID>
+  <InitializationVI>
+    <Type>Action</Type>
+    <Item2Launch>
+      <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\IVI DC Power Supply\IVI DC Power Supply Configuration.llb\IVI DC Power Supply Initialization VI.vi</Path>
+    </Item2Launch>
+  </InitializationVI>
+  <CustomDeviceVI>
+		<SourceDistribution>
+			<Source>
+				<SupportedTarget>Windows</SupportedTarget>
+				<Source>
+					<Type>To Common Doc Dir</Type>
+					<Path>Custom Devices\IVI DC Power Supply\IVI DC Power Supply Engine.llb\IVI DC Power Supply RT Driver VI.vi</Path>
+				</Source>
+				<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\IVI DC Power Supply\IVI DC Power Supply Engine.llb\IVI DC Power Supply RT Driver VI.vi</RealTimeSystemDestination>
+			</Source>
+		</SourceDistribution>
+	</CustomDeviceVI>
+  <Dependencies />
+  <Pages>
+    <Page>
+      <Name>
+        <eng>IVI DC Power Supply</eng>
+        <loc>IVI DC Power Supply</loc>
+      </Name>
+      <GUID>B6D4E6F5-536E-21B0-12EC-90794D02CEEC</GUID>
+      <Glyph>
+			<Type>To Application Data Dir</Type>
+			<Path>System Explorer\Glyphs\scxi chassis.png</Path>
+		</Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\IVI DC Power Supply\IVI DC Power Supply Configuration.llb\IVI DC Power Supply Main Page.vi</Path>
+      </Item2Launch>
+	  <RunTimeMenu>
+		<MenuItem>
+			<GUID>B6D4E6F5-536E-21B0-12EC-90794D02CEED</GUID>
+			<Type>Action</Type>
+			<Name>
+				<eng>Add Channel</eng>
+				<loc>Add Channel</loc>
+			</Name>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\IVI DC Power Supply\IVI DC Power Supply Configuration.llb\Create Channels.vi</Path>
+			</Item2Launch>
+		</MenuItem>
+		<MenuItem>
+			<GUID>B6D4E6F5-536E-21B0-12EC-80794D02CEEZ</GUID>
+			<Type>Action</Type>
+			<Name>
+				<eng>Disable</eng>
+				<loc>Disable</loc>
+			</Name>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\IVI DC Power Supply\IVI DC Power Supply Configuration.llb\EnableDisable.vi</Path>
+			</Item2Launch>
+        </MenuItem>
+		<MenuItem>
+			<GUID>6D4E6F5-536E-21B0-12EC-90794D02CEEF</GUID>
+			<Type>VI</Type>
+			<MinNrOfChilds>1</MinNrOfChilds>
+			<Name>
+				<eng>Delete Multiple Items</eng>
+				<loc>Delete Multiple Items</loc>
+			</Name>
+			<Item2Launch>
+				<Type>Absolute</Type>
+				<Path>Dialogs\Delete Multiple Items.vi</Path>
+			</Item2Launch>
+		</MenuItem>
+	  </RunTimeMenu>
+	  <ButtonList>
+        <Button>
+          <ID>NIVS_IVIDC_AddChannel</ID>
+		  <Glyph>
+			<Type>To Application Data Dir</Type>
+			<Path>System Explorer\Glyphs\Add Procedures.png</Path>
+		  </Glyph>
+          <Type>Action</Type>
+          <ReferencedGUID>B6D4E6F5-536E-21B0-12EC-90794D02CEED</ReferencedGUID>
+          <ButtonText>
+            <eng>Add Channel</eng>
+            <loc>Add Channel</loc>
+          </ButtonText>
+          <Caption>
+            <eng>Add Channel</eng>
+            <loc>Add Channel</loc>
+          </Caption>
+          <TipStrip>
+            <eng>Add Channel</eng>
+            <loc>Add Channel</loc>
+          </TipStrip>
+          <Documentation>
+            <eng></eng>
+            <loc></loc>
+          </Documentation>
+        </Button>
+	  </ButtonList>
+    </Page>
+	<Page>
+      <Name>
+        <eng>IVI DC Power Supply</eng>
+        <loc>IVI DC Power Supply</loc>
+      </Name>
+      <GUID>B6D4E6F5-536E-21B0-12EC-90794D02DISA</GUID>
+      <Glyph>
+			<Type>To Application Data Dir</Type>
+			<Path>System Explorer\Glyphs\EditDelete.png</Path>
+		</Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\IVI DC Power Supply\IVI DC Power Supply Configuration.llb\IVI DC Power Supply Main Page.vi</Path>
+      </Item2Launch>
+	  <RunTimeMenu>
+		<MenuItem>
+			<GUID>B6D4E6F5-536E-21B0-12EC-80794D02CEEY</GUID>
+			<Type>Action</Type>
+			<Name>
+				<eng>Enable</eng>
+				<loc>Enable</loc>
+			</Name>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\IVI DC Power Supply\IVI DC Power Supply Configuration.llb\EnableDisable.vi</Path>
+			</Item2Launch>
+        </MenuItem>
+	  </RunTimeMenu>
+    </Page>
+<Page>
+      <Name>
+        <eng>Channel Page</eng>
+        <loc>Channel Page</loc>
+      </Name>
+      <GUID>B9A35958-4FA4-E2BC-5A53-1D7326B1BD9E</GUID>
+      <Glyph>
+			<Type>To Application Data Dir</Type>
+			<Path>System Explorer\Glyphs\ni-can port.png</Path>
+		</Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\IVI DC Power Supply\IVI DC Power Supply Configuration.llb\Channel Page.vi</Path>
+      </Item2Launch>
+	  <RunTimeMenu>
+		<MenuItem>
+			<GUID>6B6D4E6F5-536E-21B0-12EC-90794D02CEFE</GUID>
+			<Type>Action</Type>
+			<Name>
+				<eng>Delete Channel</eng>
+				<loc>Delete Channel</loc>
+			</Name>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\IVI DC Power Supply\IVI DC Power Supply Configuration.llb\Remove Channel.vi</Path>
+			</Item2Launch>
+		</MenuItem>
+	  </RunTimeMenu>
+    </Page>
+<Page>
+      <Name>
+        <eng>Input Channel Page</eng>
+        <loc>Input Channel Page</loc>
+      </Name>
+      <GUID>15DB30E4-6DFE-7F16-D974-C1D3A3D1FF8B</GUID>
+      <Glyph>
+			<Type>To Application Data Dir</Type>
+			<Path>System Explorer\Glyphs\default fpga channel.png</Path>
+		</Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\IVI DC Power Supply\IVI DC Power Supply Configuration.llb\Input Channel Page.vi</Path>
+      </Item2Launch>
+    </Page>
+<Page>
+      <Name>
+        <eng>extra 2</eng>
+        <loc>extra 2</loc>
+      </Name>
+      <GUID>29F08FC6-7768-EB65-46A9-B73525522A41</GUID>
+      <Glyph>
+			<Type>To Application Data Dir</Type>
+			<Path>System Explorer\Glyphs\system variable.png</Path>
+		</Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\IVI DC Power Supply\IVI DC Power Supply Configuration.llb\extra 2.vi</Path>
+      </Item2Launch>
+    </Page>
+<Page>
+      <Name>
+        <eng>Channel (delete protected)</eng>
+        <loc>Channel (delete protected)</loc>
+      </Name>
+      <DisallowRenaming>true</DisallowRenaming>
+      <DeleteProtection>true</DeleteProtection>
+      <GUID>2F57B30F-F7F9-BC70-992A-D64B2B0468D2</GUID>
+      <Glyph>
+        <Type>To Application Data Dir</Type>
+        <Path>System Explorer\Glyphs\system variable.png</Path>
+      </Glyph>
+      <Item2Launch>
+        <Type>Absolute</Type>
+        <Path>System UI VIs\Custom Device\Custom Device Channel.vi</Path>
+      </Item2Launch>
+      <RunTimeMenu>
+      </RunTimeMenu>
+    </Page>
+  </Pages>
+  
+  <CustomXML>
+    <Dummy></Dummy>
+  </CustomXML>
+</CustomDevice>
