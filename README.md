@@ -1,3 +1,4 @@
+# NOTICE: This repository has been archived, and will no longer be maintained or accept pull requests.
 ## IVI DC Power Supply Custom Device ##
 
 **IVI DC Power Supply Custom Device** allows users to use any DC power supply supported by NI-IVI inside NI VeriStand.  This functionality is commonly used to supply external power to other devices or components.
